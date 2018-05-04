@@ -43,7 +43,12 @@
             </div>
         </main>
     </div>
-    <script src="js/libs/require.js" data-main="js/app/main"></script>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["js/app/main"], function() {
+            require(["index"])
+        })
+    </script>
     <script id="tpl-list" type="text/x-handlebars-template">
         {{#each this}}
         <div class="every swiper-slide">
@@ -51,7 +56,7 @@
             <div class="all">
                 {{#each list}}
                 <dl>
-                    <a href="./detail.html">
+                    <a href="./detail.html?num={{num}}&id={{../id}}">
                         <dt><img src="images/{{img}}" alt=""></dt>
                         <dd>
                             <p>{{title}}</p>

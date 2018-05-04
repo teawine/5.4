@@ -19,7 +19,7 @@
                 <img src="images/back.jpg" alt="">
             </a>
             <p>
-                <span class="get">商品</span><span class="det">详情</span>
+                <span class="get sp">商品</span><span class="det">详情</span>
             </p>
             <a href="./index.html" class="search">
                 <img src="images/home.jpg" alt="">
@@ -27,21 +27,7 @@
         </header>
         <main>
             <div class="scroll">
-                <div class="one">
-                    <img src="images/1.jpg" alt="">
-                    <h3>dnasdasdjsad</h3>
-                    <p class="infor">asdjnajs</p>
-                    <span class="price">￥100</span>
-                    <p class="jf">
-                        购买最多可得95积分
-                    </p>
-                    <p class="fw">
-                        服务：30天无忧退款
-                    </p>
-                </div>
-                <div class="two">
-                    <h3>商品详情</h3>
-                </div>
+
             </div>
         </main>
         <footer>
@@ -58,6 +44,32 @@
             </div>
         </footer>
     </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["js/app/main"], function() {
+            require(["detail"])
+        })
+    </script>
+    <script id="tpl-detail" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="one">
+            <img src="images/{{img}}" alt="">
+            <h3>{{title}}</h3>
+            <p class="infor">{{infor}}</p>
+            <span class="price">￥{{price}}</span>
+            <p class="jf">
+                购买最多可得95积分
+            </p>
+            <p class="fw">
+                服务：30天无忧退款
+            </p>
+        </div>
+        <div class="two">
+            <h3>商品详情</h3>
+            <p>{{deta}}</p>
+        </div>
+        {{/each}}
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,4 @@
 require(["jquery", "handlebars", "swiper"], function($, Handlebars, Swiper) {
-
-
     //ajax
     $.ajax({
         url: "/login",
