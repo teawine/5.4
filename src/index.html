@@ -3,13 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equir='X-UA-compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no'>
     <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px";
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 </head>
 
 <body>
+    <div class="wrap">
+        <header>
+            <a href="javascript:;" class="back">
+                <img src="images/back.jpg" alt="">
+            </a>
+            <p>居家</p>
+            <a href="javascript:;" class="search">
+                <img src="images/search.jpg" alt="">
+            </a>
+        </header>
+        <main>
+            <div class="scroll">
+                <div class="nav">
+                    <span class="active">床品</span>
+                    <span>被套</span>
+                    <span>抱枕</span>
+                    <span>家居</span>
+                    <span>收纳</span>
+                    <span>布艺</span>
+                    <span>软装</span>
+                </div>
+                <div class="box swiper-container">
+                    <div class="list swiper-wrapper">
 
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/libs/require.js" data-main="js/app/main"></script>
+    <script id="tpl-list" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="every swiper-slide">
+            <h2>{{type}}</h2>
+            <div class="all">
+                {{#each list}}
+                <dl>
+                    <a href="./detail.html">
+                        <dt><img src="images/{{img}}" alt=""></dt>
+                        <dd>
+                            <p>{{title}}</p>
+                            <span>￥{{price}}</span>
+                        </dd>
+                    </a>
+                </dl>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
 </body>
 
 </html>

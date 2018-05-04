@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.3rem;
+}
+
+body,
+html,
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 0.8rem;
+    position: relative;
+    a {
+        position: absolute;
+        top: 10px;
+    }
+    p {
+        width: 100%;
+        height: 0.8rem;
+        text-align: center;
+        line-height: 0.8rem;
+        span {
+            padding: 0.1 0.3rem;
+            border: solid 1px #666;
+        }
+        .get {
+            background: #666;
+            color: white;
+        }
+    }
+    .back {
+        left: 0.15rem;
+    }
+    .search {
+        right: 0.15rem;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    .scroll {
+        width: 100%;
+        height: auto;
+    }
+    .one {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        h3 {
+            text-indent: 0.2rem;
+            width: 100%;
+            height: 0.6rem;
+            line-height: 1rem;
+            color: #000;
+            font-size: 0.35rem;
+        }
+        .infor {
+            text-indent: 0.2rem;
+            width: 100%;
+            height: auto;
+            line-height: 0.5rem;
+            color: #999;
+        }
+        .price {
+            text-indent: 0.2rem;
+            display: block;
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            color: red;
+            border-bottom: solid 1px #ccc;
+        }
+        .jf,
+        .fw {
+            width: 100%;
+            height: 1rem;
+            text-indent: 0.2rem;
+            line-height: 1rem;
+            border-bottom: solid 1px #ccc;
+        }
+    }
+    .two {
+        width: 100%;
+        height: auto;
+        h3 {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 1rem;
+    border-top: solid 1px #ccc;
+    display: flex;
+    div {
+        flex: 1;
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .tx {
+        color: red;
+    }
+    .sj {
+        background: #ccc;
+        color: white;
+    }
+}

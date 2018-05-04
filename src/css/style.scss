@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.3rem;
+}
+
+body,
+html,
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 0.8rem;
+    position: relative;
+    a {
+        position: absolute;
+        top: 10px;
+    }
+    p {
+        width: 100%;
+        height: 0.8rem;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .back {
+        left: 0.15rem;
+    }
+    .search {
+        right: 0.15rem;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    .scroll {
+        width: 100%;
+        height: auto;
+        .nav {
+            width: auto;
+            overflow-x: scroll;
+            height: 1rem;
+            line-height: 1rem;
+            display: flex;
+            flex-wrap: nowrap;
+            span {
+                padding: 0 0.3rem;
+                flex-shrink: 0;
+            }
+            .active {
+                border-bottom: solid 2px salmon;
+                color: salmon;
+            }
+        }
+    }
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    .list {
+        width: 100%;
+        height: auto;
+        display: flex;
+        .every {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            h2 {
+                height: 1rem;
+                line-height: 1rem;
+                text-align: center;
+            }
+            .all {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                dl {
+                    width: 49%;
+                    height: auto;
+                    dt {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    dd {
+                        width: 100%;
+                        height: 1.6rem;
+                        p {
+                            width: 100%;
+                            height: 1rem;
+                            line-height: 1rem;
+                            color: #333;
+                        }
+                        span {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

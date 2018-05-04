@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.3rem;
+}
+
+body,
+html,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 0.8rem;
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  top: 10px;
+}
+
+header p {
+  width: 100%;
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+
+header .back {
+  left: 0.15rem;
+}
+
+header .search {
+  right: 0.15rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+main .scroll {
+  width: 100%;
+  height: auto;
+}
+
+main .scroll .nav {
+  width: auto;
+  overflow-x: scroll;
+  height: 1rem;
+  line-height: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+main .scroll .nav span {
+  padding: 0 0.3rem;
+  flex-shrink: 0;
+}
+
+main .scroll .nav .active {
+  border-bottom: solid 2px salmon;
+  color: salmon;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+}
+
+.box .list {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.box .list .every {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.box .list .every h2 {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.box .list .every .all {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box .list .every .all dl {
+  width: 49%;
+  height: auto;
+}
+
+.box .list .every .all dl dt {
+  width: 100%;
+  height: auto;
+}
+
+.box .list .every .all dl dt img {
+  width: 100%;
+  height: auto;
+}
+
+.box .list .every .all dl dd {
+  width: 100%;
+  height: 1.6rem;
+}
+
+.box .list .every .all dl dd p {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  color: #333;
+}
+
+.box .list .every .all dl dd span {
+  color: red;
+}
